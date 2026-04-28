@@ -19,3 +19,8 @@ test("should 2nd Test", () => {
   fireEvent.click(button);
   expect(screen.getByText("Updated Value")).toBeInTheDocument();
 });
+
+test("SnapShot Testing", () => {
+  const { container } = render(<App />);
+  expect(container).toMatchSnapshot();
+});

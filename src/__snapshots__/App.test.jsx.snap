@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SnapShot Testing 1`] = `
+<div>
+  <input
+    placeholder="Enter Here"
+    type="text"
+  />
+  <button>
+    Update
+  </button>
+  <h1 />
+</div>
+`;
