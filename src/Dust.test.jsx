@@ -7,3 +7,10 @@ test("get by role", () => {
   const input = screen.getByRole("textbox");
   expect(input).toBeInTheDocument();
 });
+
+test("get by test-id", () => {
+  render(<Dust />);
+
+  const button = screen.getByTestId("btn-test-id");
+  expect(button).toBeInTheDocument();
+});
