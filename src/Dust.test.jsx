@@ -21,3 +21,9 @@ test("get by Default Value", () => {
   const textarea = screen.getByDisplayValue("Shaad");
   expect(textarea).toBeInTheDocument();
 });
+
+test("Assertion Methods", () => {
+  render(<Dust />);
+  const btn = screen.getByRole("button");
+  expect(btn).toBeEnabled();
+});
